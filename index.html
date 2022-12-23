@@ -107,44 +107,39 @@
             <p class="font-one color-one font-size-55">Melia & Jerry</p>
             <p class="font-tree fs-3 font-bold color-one" style="margin-top: -15px">Sabtu, 11 Februari 2023</p>
             <p class="font-tree fs-5 font-bold color-one mt-2">Kami berharap anda menjadi bagian dari hari istimewa kami!</p>
-            <!-- Tambahkan elemen HTML untuk menampilkan hitung mundur -->
-            <div id="countdown"></div>
-
-            <!-- Tambahkan kode JavaScript untuk membuat hitung mundur -->
-            <script>
-              // Set waktu untuk hitung mundur (dalam detik)
-              var countDownDate = new Date("Feb 11, 2023 09:00:00").getTime();
-
-              // Ambil elemen HTML untuk menampilkan hitung mundur
-              var countdownElement = document.getElementById("countdown");
-
-              // Update hitung mundur setiap 1 detik
-              var countdownInterval = setInterval(function () {
-                // Dapatkan selisih waktu sekarang dan waktu hitung mundur
-                var currentTime = new Date().getTime();
-                var distance = countDownDate - currentTime;
-
-                // Hitung hari, jam, menit, dan detik
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Tampilkan hitung mundur di elemen HTML
-                countdownElement.innerHTML = days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
-
-                // Jika waktu hitung mundur selesai, tampilkan pesan
-                if (distance < 0) {
-                  clearInterval(countdownInterval);
-                  countdownElement.innerHTML = "Selamat Hari bahagiamu!";
-                }
-              }, 1000);
-            </script>
+            <a class="btn btn-default font-two fw-bold m-5" href="undangan.html" role="button">Simpan Tanggal
+            </a>
+            </div>
+            <div id="countdown" class="d-flex justify-content-center">
+              <span class="p-2">
+              <div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white">
+                <h5 class="card-title text-center" id="days"></h5>
+                <h6>Hari</h6>
+              </div>
             </span>
+            <span class="p-2">
+              <div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white">
+                <h5 id="hours"></h5>
+                <h6>Jam</h6>
+              </div>
+            </span>
+            <span class="p-2">
+              <div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white">
+                <h5 id="minutes"></h5>
+                <h6>Menit</h6>
+              </div>
+            </span>
+            <span class="p-2">
+              <div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white">
+                <h5 id="seconds"></h5>
+                <h6>Detik</h6>
+              </div>
+            </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <script src="asset/js/script.js"></script>
     <div class="d-flex flex-row">
       <img src="asset/image/frame-bottom.svg" class="float-start img-fluid mx-auto d-block img-flower" />
     </div>
