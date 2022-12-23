@@ -6,6 +6,12 @@
     background-image: linear-gradient(rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.90));
 }
 
+#countdown .countdown-item {
+    margin: 0 10px;
+    color: #EFE6C4;
+    border-radius: 20px;
+}
+
 /* FONT */
 .font-size-96{
     font-size: 96px;
@@ -17,11 +23,19 @@
 
 #countdown {
     font-size: 25px;
-	font-weight: 500;
+	font-weight: bold;
 	line-height: 30px;
     color: #4E1818;
     margin-bottom: 100px;
     font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+#countdown-number {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .model-1{
