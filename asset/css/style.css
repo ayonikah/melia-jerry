@@ -55,7 +55,7 @@
   }
   
   .slide-in-left {
-    animation: slide-in-left 5s;
+    animation: slide-in-left 10s;
     animation-fill-mode: forwards;
   }
 
@@ -71,7 +71,7 @@
   }
   
   .scale-up {
-    animation: scale-up 5s;
+    animation: scale-up 10s;
     animation-fill-mode: forwards;
   }
 
