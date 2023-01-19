@@ -12,6 +12,27 @@
     border-radius: 20px;
 }
 
+#wanita {
+    background-color: #2A4D1F; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  #pria {
+    background-color: #2A4D1F; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+
 /* FONT */
 .font-size-96{
     font-size: 96px;
