@@ -108,7 +108,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <div class="text-center scale-up ">
-          <img class="animation-image" src="asset/image/atas.png" width="350" style="margin-top: -25px" />
+          <img class="slide-in-left" src="asset/image/atas.png" width="350" style="margin-top: -25px" />
         </div>
       </div>
       <div class="row ">
@@ -198,7 +198,7 @@
             <div class="text-center">
               <div class="d-flex justify-content-center mt-5 scale-up">
                 <div class="text-center">
-                  <img class="animation-image" src="asset/image/wanita.png" width="250" />
+                  <img class="slide-in-left" src="asset/image/wanita.png" width="250" />
                 </div>
               </div>
               <p class="font-one color-one font-size-55 fs-3 scale-up scale-up animation-text">Ratna Melia</p>
@@ -212,7 +212,7 @@
             <div class="text-center">
               <div class="d-flex justify-content-center mt-4 scale-up">
                 <div class="text-center">
-                  <img class="animation-image" src="asset/image/laki.png" width="250" />
+                  <img class="slide-in-left" src="asset/image/laki.png" width="250" />
                 </div>
               </div>
               <p class="font-one color-one font-size-55 fs-3 scale-up animation-text">Jerry Risky Erlanda</p>
@@ -859,6 +859,22 @@ text.addEventListener("mouseout", function(){
     text.style.animationPlayState = "running";
 });
     </script>
+
+    <script>
+      var element = document.getElementsByClassName("slide-in-left");
+window.addEventListener("scroll", function() {
+    for (var i = 0; i < image.length; i++) {
+        var pos = image[i].getBoundingClientRect().top;
+        var screenHeight = window.innerHeight;
+        if (pos < screenHeight) {
+          image[i].style.animationPlayState = "running";
+        } else {
+          image[i].style.animationPlayState = "paused";
+        }
+    }
+});
+    </script>
+
 
   </body>
 </html>
